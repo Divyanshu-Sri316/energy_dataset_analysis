@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Statistical Analysis Results</title>
+</head>
+<body>
+    <h1>Statistical Analysis Results</h1>
+    <p><strong>Mean:</strong> {{ stats['mean'] }}</p>
+    <p><strong>Median:</strong> {{ stats['median'] }}</p>
+    <p><strong>Mode:</strong> {{ stats['mode'] }}</p>
+    <p><strong>Standard Deviation:</strong> {{ stats['std_dev'] }}</p>
+    <h2>Correlation Matrix</h2>
+    <pre>{{ stats['corr_matrix'] }}</pre>
+    <h2>Generated Insights</h2>
+    <p>{{ insights }}</p>
+    <h2>Plots</h2>
+    <img src="/static/histogram.png" alt="Histogram">
+    <img src="/static/scatter_plot.png" alt="Scatter Plot">
+    <img src="/static/line_plot.png" alt="Line Plot">
+</body>
+</html>
